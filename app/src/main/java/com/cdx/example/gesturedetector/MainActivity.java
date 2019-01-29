@@ -3,6 +3,7 @@ package com.cdx.example.gesturedetector;
 import android.view.View;
 import com.cdx.example.gesturedetector.activity.Test1Activity;
 import com.cdx.example.gesturedetector.activity.Test2Activity;
+import com.cdx.example.gesturedetector.activity.Test3Activity;
 
 import java.util.ArrayList;
 import apis.amapv2.com.listviewlibrary.activity.BaseListActivty;
@@ -20,6 +21,7 @@ public class MainActivity extends BaseListActivty {
         ArrayList<ItemObject> data = new ArrayList<>();
         data.add(new ItemObject("GestureDetector实现监听单机效果", Test1Activity.class));
         data.add(new ItemObject("GestureDetector实现监听双击的效果", Test2Activity.class));
+        data.add(new ItemObject("GestureDetector简单实现监听单机双击的效果", Test3Activity.class));
 
         mMyListView.setData(data);
     }
