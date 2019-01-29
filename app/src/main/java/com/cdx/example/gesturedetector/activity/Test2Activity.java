@@ -5,13 +5,11 @@ import android.os.Bundle;
 
 import com.cdx.example.gesturedetector.R;
 
-public class Test1Activity extends AppCompatActivity {
+public class Test2Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test1);
-
-        //在自定义控件中监听了事件
+        setContentView(R.layout.activity_test2);
     }
 }
