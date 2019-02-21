@@ -74,10 +74,16 @@ public class MyView extends View {
         }
 
         //用户按下触摸屏，快速移动后松开，由一个ACTION_DOWN,多个ACTION_MOVE,一个ACTION_UP触发。
-        public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX,
-                               float velocityY) {
-            Log.e(TAG,"onFling");
-            return false;
+        /**
+         * @param e1 手势起点的移动事件
+         * @param e2 手势移动的事件
+         * @param velocityX 每秒x轴方向上移动的像素
+         * @param velocityY 每秒y轴方向上移动的像素
+         * @return
+         */
+        public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+            Log.e("onFling","e1.getX():"+e1.getX()+" e2.getX():"+e2.getX());
+            return true;
         }
     }
 
