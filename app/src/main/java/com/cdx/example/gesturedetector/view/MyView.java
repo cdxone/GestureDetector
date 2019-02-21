@@ -54,9 +54,17 @@ public class MyView extends View {
         }
 
         //手指按下并且拖动
-        public boolean onScroll(MotionEvent e1, MotionEvent e2,
-                                float distanceX, float distanceY) {
+        /**
+         * @param e1 第一次按下的位置
+         * @param e2 移动过程中的位置
+         * @param distanceX 滑动起点到滑动终点的水平距离，而不是起点和终点的直线距离,在一次滑动的过程中，e1.getX()值一直不会变。
+         * @param distanceY 滑动起来到滑动终点的竖直距离，而不是起点和终点的直线距离。
+         * @return
+         */
+        public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
             Log.e(TAG,"onScroll");
+            Log.e("onScroll","e1.getX():" + e1.getX() + " e2.getX():" + e2.getX());
+
             return false;
         }
 
